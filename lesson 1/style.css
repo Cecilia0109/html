@@ -1,0 +1,59 @@
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+}
+
+#mytable {
+  color: orange;
+}
+.mytable_class {
+  background-color: rgba(206, 176, 57, 0.189);
+}
+/* li所有层 */
+/* ul.info li{
+    list-style: none;
+
+} */
+/* li只有下面一层 */
+ul.info > li {
+  list-style: none;
+
+  /* pick which child */
+}
+ul.info > li li:nth-child(2) {
+  list-style: none;
+}
+/* decoration for link */
+ol li a {
+  text-decoration: none;
+
+  /* 三种改变链接颜色的方式1、通过target 2、通过固定href 3、通过模糊搜索href */
+}
+ol li a[target="_blank"] {
+  color: rgba(167, 181, 17, 0.503);
+}
+
+ol li a[href="https://google.com"]
+{
+  color: rgb(168, 33, 114);
+}
+
+ol li a[href*="google"] {
+  color: rgb(33, 168, 112);
+}
+/* head */
+ol li a[href^="httpss"] {
+    color: rgb(33, 128, 168);
+  }
+/* tail */
+  ol li a[href$=".au"] {
+    background: rgb(183, 20, 20);;
+  }
+
+  ol li a[href*="google"][href$=".com.au"]{
+      background: #666;
+  }
