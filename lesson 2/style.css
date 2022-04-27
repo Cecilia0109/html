@@ -1,0 +1,167 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+/* .upper{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.pseudo::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+
+}
+.pseudo::first-line{
+    font-size: 24px;
+}
+
+.pseudo::selection{
+    background-color: pink;
+}
+.pseudo::before{
+    content: "...";
+    display: block;
+    width: 30px;
+    height: 10px;
+    background-color: red;
+}
+.pseudo::after{
+    content: "***";
+} */
+
+/* .block1 {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  border: 3px solid black; */
+/* set a circle */
+/* border-radius: 10px; */
+/* 默认五种位置，static（默认文档流，不能随意定义位置）、relative（相对原来的位置）、absolute、fixed、sticky */
+/* position: static; */
+/* 始终根据左上的原则来设定，如果没有左上，才会听从右下 */
+/* left: 100px;
+  top: 100px; */
+/* } */
+/* position: 如果block2 的状态是static，block2的位置变成绝对位置时，则会参考block2 上一层级来改变位置，如果block2是相对位置时，才根据block2 来执行 */
+/* .block2 {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border: 10px solid black; */
+/* set a circle */
+/* border-radius: 10px; */
+/* 默认五种位置，static（默认文档流，不能随意定义位置）、relative（相对原来的位置）、absolute、fixed、sticky */
+/* position: static;
+} */
+
+/* .block2_sub {
+  width: 150px;
+  height: 150px;
+  border: 1px dashed gold;
+} */
+/* 如果设定static 则后面的left 都失效 */
+/* .block2_sub:nth-child(1) {
+  background-color: green;
+  position: relative;
+  left: 50px;
+  z-index: 2;
+}
+.block2_sub:nth-child(2) {
+  background-color: blue;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+}
+.block2_sub:nth-child(3){
+        background-color: purple;
+        position: relative;
+        top: 30px;
+    } */
+* {
+  box-sizing: border-box;
+}
+.block3 {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: relative;
+  margin: 50px;
+  font-size: 40px;
+  padding: 30px;
+}
+.block4 {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: relative;
+  margin: 80px;
+  margin-left: 20px;
+  margin-right: 30px;
+  font-size: 40px;
+}
+
+.block5 {
+  width: 90%;
+  height: 90%;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  /* align-content: center;
+    justify-content: center; */
+  /* place-content: center; */
+  /* align-items: center; */
+  /* place center = justify+align */
+  /* flex-flow 一定要在flex-direction 的前面，但如果换成flex-wrap 则不需要考虑先后顺序 */
+}
+.block5_sub {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 1px solid gold;
+  /* flex-grow: 1; */
+}
+/*  
+.block5_sub:nth-child(3){
+    flex-grow: 3;
+}
+.block5_sub:nth-child(5){
+    flex-shrink: 5;
+}
+.block5_sub:nth-child(4){
+    flex-grow: 2;
+    flex-shrink: 3;
+} */
+.block5_sub:nth-child(3) {
+  /* align-self: flex-start; */
+  order: -1;
+}
+
+.block5_sub:nth-child(4) {
+  /* align-self: flex-start; */
+  order: -1;
+}
+
+.block5_sub:nth-child(5) {
+  /* align-self: flex-start; */
+  order: -1;
+}
+
+.block5_sub:nth-child(6) {
+  /* align-self: flex-start; */
+  order: 2;
+}
