@@ -47,41 +47,47 @@ body {
   top: 100px; */
 /* } */
 /* position: 如果block2 的状态是static，block2的位置变成绝对位置时，则会参考block2 上一层级来改变位置，如果block2是相对位置时，才根据block2 来执行 */
-/* .block2 {
+.block2 {
+  position: absolute;
   width: 500px;
   height: 500px;
   background-color: red;
-  border: 10px solid black; */
+  border: 30px solid black;
+  z-index: -1;
+  top: 100px;
+  left: 50px;
+
 /* set a circle */
 /* border-radius: 10px; */
 /* 默认五种位置，static（默认文档流，不能随意定义位置）、relative（相对原来的位置）、absolute、fixed、sticky */
-/* position: static;
-} */
 
-/* .block2_sub {
+}
+
+.block2_sub {
   width: 150px;
   height: 150px;
   border: 1px dashed gold;
-} */
+}
 /* 如果设定static 则后面的left 都失效 */
-/* .block2_sub:nth-child(1) {
+.block2_sub:nth-child(1) {
   background-color: green;
-  position: relative;
-  left: 50px;
-  z-index: 2;
+  /* position: static; */
+  left: 60px;
+  top: 60px;
+  z-index: 3;
 }
 .block2_sub:nth-child(2) {
   background-color: blue;
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  z-index: 1;
+  /* position: static; */
+  left: 0px;
+  top: 0px;
+  z-index: 3;
 }
 .block2_sub:nth-child(3){
         background-color: purple;
         position: relative;
         top: 30px;
-    } */
+    }
 * {
   box-sizing: border-box;
 }
